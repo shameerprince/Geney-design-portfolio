@@ -3,38 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aapka Portfolio</title>
+    <title>Aapka Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Aapka Naam</h1>
-            <p>Web Developer | Designer</p>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Aapka Naam</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Web Developer | Designer | Creative Thinker</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Namaste! Main ek passionate web developer aur designer hoon. Mujhe naye aur innovative projects banane ka bahut shauk hai.</p>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Yahan Project 1 ki description hogi.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Yahan Project 2 ki description hogi.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Namaste! Main ek passionate web developer aur designer hoon. Mujhe naye aur innovative projects banane ka bahut shauk hai. Main modern technologies jaise HTML, CSS, JavaScript, aur frameworks ka istemal karta hoon.</p>
+                <p>Mera goal hai ki main user-friendly aur visually stunning websites banau jo businesses ko unke goals achieve karne mein madad karein.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Email: aapkaemail@example.com</p>
-        <p>Phone: 123-456-7890</p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Yahan Project 1 ki description hogi. Yeh project modern web design aur development ke concepts par based hai.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Yahan Project 2 ki description hogi. Isme animations aur interactivity ka istemal kiya gaya hai.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Yahan Project 3 ki description hogi. Is project mein responsive design aur user experience par focus kiya gaya hai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: aapkaemail@example.com</p>
+                <p><i class="fas fa-phone"></i> Phone: 123-456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Aapka Address, City, Country</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </section>
 
     <footer>
