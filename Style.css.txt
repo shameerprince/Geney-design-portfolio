@@ -152,3 +152,45 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+/* Banner Styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6); /* Image ko thoda dark karein */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-text .btn {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
