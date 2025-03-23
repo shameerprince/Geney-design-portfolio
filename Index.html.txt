@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header Section -->
     <header>
         <nav>
             <div class="container">
@@ -26,6 +32,7 @@
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
@@ -36,26 +43,34 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
                     <p>Yahan Project 1 ki description hogi. Yeh project modern web design aur development ke concepts par based hai.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
                     <p>Yahan Project 2 ki description hogi. Isme animations aur interactivity ka istemal kiya gaya hai.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
                     <h3>Project 3</h3>
                     <p>Yahan Project 3 ki description hogi. Is project mein responsive design aur user experience par focus kiya gaya hai.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -72,8 +87,21 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Aapka Naam. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Dark/Light Mode -->
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            themeToggle.querySelector('i').classList.toggle('fa-sun');
+            themeToggle.querySelector('i').classList.toggle('fa-moon');
+        });
+    </script>
 </body>
 </html>
